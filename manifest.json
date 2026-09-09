@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Neon IP Probe – Badge & Hover",
+  "description": "Shows your public IP + location in badge + hover + popup. Cyberpunk style.",
+  "version": "1.2",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+  "https://api.ipify.org/*",
+  "https://ipapi.co/*",
+  "https://ipinfo.io/*",
+  "https://www.openstreetmap.org/*"
+],
+
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
